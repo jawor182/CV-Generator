@@ -1,9 +1,19 @@
 import './App.css'
+import Education from './components/Education'
+import General from './components/General'
+import Experience from './components/Experience'
+import Greeting from './Greeting'
+import CVProcess from './components/CVProcess'
 function App() {
  return(
   <>
-    <h1 className='title'>CV Generator</h1>
-    <p className='title'> Input here Your credentials</p>
+    <Greeting/>
+    <div className='contentForm'>
+      <General />
+      <Education/>
+      <Experience/>
+      </div>
+      <CVProcess /> 
   </>
  )
 }
